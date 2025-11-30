@@ -1,4 +1,5 @@
--- queries.sql
+-- Filename: queries.sql
+-- Example Queries
 
 -- Vegetarian recipes with potatoes
 SELECT DISTINCT r.name

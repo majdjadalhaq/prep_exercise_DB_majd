@@ -1,8 +1,12 @@
--- data.sql
+-- Filename: data.sql
+-- Seed Data
+
+-- Categories
 INSERT INTO categories (name) VALUES
 ('Japanese'),('Dessert'),('Vegetarian'),
 ('No-Bake'),('Vegan'),('Gluten-Free'),('Cake');
 
+-- Ingredients
 INSERT INTO ingredients (name) VALUES
 ('spaghetti'),('unsalted butter'),('garlic'),('soy sauce'),('mirin'),
 ('eggs'),('granulated sugar'),('cake flour'),('baking powder'),
@@ -13,6 +17,7 @@ INSERT INTO ingredients (name) VALUES
 ('Sesame seeds'),('Pepper'),('Salt'),('Olive oil'),
 ('Macaroni'),('Flour'),('Shredded Cheddar cheese');
 
+-- Step Templates
 INSERT INTO step_templates (instruction) VALUES
 ('Cook pasta according to the package instructions in salted boiling water.'),
 ('Melt butter and sauté garlic until fragrant.'),
@@ -29,7 +34,7 @@ INSERT INTO step_templates (instruction) VALUES
 ('Add Lemon Juice and blend'),
 ('Add the mix to the pie crust'),
 ('Spread the Cherry Jam'),
-('Place in refrigerator for 3h.'),
+('Place in refrigerator for 3h'),
 ('Preheat the oven'),
 ('Mix the ingredients in a bowl'),
 ('Spread the mix on baking sheet'),
@@ -49,6 +54,7 @@ INSERT INTO step_templates (instruction) VALUES
 ('Let it cook for 1 minute'),
 ('Remove pan from fire');
 
+-- Recipes
 INSERT INTO recipes (name) VALUES
 ('Wafu Garlic Butter Pasta'),
 ('Matcha Sponge Cake'),

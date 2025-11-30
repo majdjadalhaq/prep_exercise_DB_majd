@@ -1,4 +1,6 @@
--- schema.sql
+-- Filename: schema.sql
+-- Normalized Schema
+
 CREATE TABLE recipes (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name TEXT NOT NULL
@@ -14,6 +16,7 @@ CREATE TABLE ingredients (
   name TEXT NOT NULL UNIQUE
 );
 
+-- Step templates separated from recipe_steps for 3NF
 CREATE TABLE step_templates (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   instruction TEXT NOT NULL UNIQUE
